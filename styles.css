@@ -1,0 +1,213 @@
+body{
+    background-color: #222B45;
+    min-width: 1100px;
+}
+
+/* -----------------------------------------NAVBAR STYLES */
+.navbar{
+    background-color: #222b45;
+} 
+
+#nav{
+    transition: 0.4s;
+}
+
+#logo{
+    transition: 0.4s;
+}
+
+.visible{
+    visibility: hidden;
+}
+
+.link{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFCD05
+}
+
+.link:hover{
+    color: #D62237;
+    text-decoration: underline;
+}
+
+/* ---------------------------------------MAIN SECTION STYLES */
+#main{
+    background-color: #222B45;
+    color: #FFCD05;
+    height: 70vh;
+    /* min-width: 800px; */
+    margin: 0;
+}
+#demo1{
+    text-align: center;
+}
+
+#demo5{
+    visibility: hidden;
+    font-size: 2rem;
+    font-family: 'Fira Code', monospace;
+    /* font-family: 'Press Start 2P', system-ui; */
+    background-color: #1ea51d;
+    color:#222B45;
+    text-decoration: none;
+    /* padding: 2px 5px; */
+    border-radius: 10px;
+}
+
+.main-container{
+    width: 80%;
+    margin: auto;
+    font-size: 2rem;
+    font-family: 'Fira Code', monospace;
+    /* font-family: 'Press Start 2P', system-ui; */
+    color: #1ea51d;
+}
+
+.main-container h1{
+    text-align: center;
+}
+
+.main-grid{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px auto;
+    
+}
+
+.main-grid-item{
+    padding: 20px;
+}
+
+#main ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* ----------------------------------------INTRO SECTION STYLES */
+
+#introduction{
+    background-color: #fff;
+    color: #1c2743;
+    width: 80%;
+    margin: auto;
+    min-width: 1000px;
+}
+
+.intro-text h2{
+    text-align: center;
+}
+
+.intro-img{
+    border: 1px #1c2743 dashed;
+}
+#intro-img{
+    display: block;
+    width: 250px;
+    margin: auto;
+    border-radius: 300px;
+    border: 1px #1c2743 solid;
+}
+
+
+/* -----------------------------------------------FOOTER SECTION */
+
+footer{
+    color:#FFCD05;
+    background-color: #222B45;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------TEACHING CREDENTIALS SECTION */
+#teaching-credentials{
+    width: 80%;
+    margin: auto;
+}
+
+.teaching-credentials-sub{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.teaching-credentials-sub:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+#teaching-credentials h4{
+    color: #c6c5c5;
+}
+
+#tech-certs .card:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+
+/* -----------------------------------------------WORKSHOPS SECTION */
+#workshops{
+    width: 80%;
+    margin: auto;
+}
+
+#workshops h4{
+    color: #c6c5c5;
+}
+
+#workshops div{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#workshops div:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+/* ----------------------------------------------COURSE SECTION */
+#courses{
+    width: 100%;
+    margin:auto;
+}
+
+#courses-container{
+    width: 80%;
+    margin:auto;
+}
+
+/* ----------------------------------------------CERTIFICATIONS SECTION - MAIN*/
+#certifications button{
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-family: 'Fira Code', monospace;
+    border: 2px #1ea51d solid;
+    background-color: transparent;
+    color: #1ea51d;
+}
+
+#certifications button:hover{
+    background-color: #1ea51d;
+    color: #1c2743;
+}
+
+/* --------------------------------------------------WORK SAMPLES SECTION */
+#personal-samples img{
+    filter:grayscale(80%);
+}
+
+#personal-samples img:hover{
+    filter:grayscale(0%);
+}
+
+@media only screen and (max-width: 600px) {
+
+    #main{
+        padding-top: 6rem;
+        font-size: 3 rem;
+        height: 80vh;
+    }
+
+}
