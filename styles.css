@@ -198,15 +198,17 @@ footer{
     filter:grayscale(80%);
 }
 
-#personal-samples img:hover{
+#personal-samples img: hover{
     filter:grayscale(0%);
 }
 
 @media only screen and (max-width: 600px) {
 
+    body{
+        max-width: 600px;
+    }
     #main{
         padding-top: 6rem;
-        font-size: 3 rem;
         height: 80vh;
     }
 
