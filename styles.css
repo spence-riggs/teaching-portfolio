@@ -8,18 +8,6 @@ body{
     background-color: #222b45;
 } 
 
-#nav{
-    transition: 0.4s;
-}
-
-#logo{
-    transition: 0.4s;
-}
-
-.visible{
-    visibility: hidden;
-}
-
 .link{
     padding-right: 15px;
     padding-left: 15px;
@@ -35,13 +23,15 @@ body{
     text-decoration: underline;
 }
 
+
 /* ---------------------------------------MAIN SECTION STYLES */
 #main{
     background-color: #222B45;
     color: #FFCD05;
-    height: 70vh;
+    height: 70lvh;
     /* min-width: 800px; */
     margin: 0;
+    height: 550px;
 }
 #demo1{
     text-align: center;
@@ -49,22 +39,20 @@ body{
 
 #demo5{
     visibility: hidden;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: 'Fira Code', monospace;
-    /* font-family: 'Press Start 2P', system-ui; */
     background-color: #1ea51d;
     color:#222B45;
     text-decoration: none;
-    /* padding: 2px 5px; */
     border-radius: 10px;
 }
 
 .main-container{
     width: 80%;
     margin: auto;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: 'Fira Code', monospace;
-    /* font-family: 'Press Start 2P', system-ui; */
+    max-width: 1300px;
     color: #1ea51d;
 }
 
@@ -72,23 +60,6 @@ body{
     text-align: center;
 }
 
-.main-grid{
-    width: 60%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 300px auto;
-    
-}
-
-.main-grid-item{
-    padding: 20px;
-}
-
-#main ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 /* ----------------------------------------INTRO SECTION STYLES */
 
 #introduction{
@@ -96,75 +67,24 @@ body{
     color: #1c2743;
     width: 80%;
     margin: auto;
-    min-width: 1000px;
+    /* min-width: 1000px; */
 }
 
 .intro-text h2{
     text-align: center;
 }
 
-.intro-img{
-    border: 1px #1c2743 dashed;
+.intro-text p{
+    font-size: 1.5rem;
+    line-height: 2;
 }
+
 #intro-img{
     display: block;
     width: 250px;
     margin: auto;
     border-radius: 300px;
     border: 1px #1c2743 solid;
-}
-
-
-/* -----------------------------------------------FOOTER SECTION */
-
-footer{
-    color:#FFCD05;
-    background-color: #222B45;
-    text-align: center;
-}
-
-
-/* ----------------------------------------------TEACHING CREDENTIALS SECTION */
-#teaching-credentials{
-    width: 80%;
-    margin: auto;
-}
-
-.teaching-credentials-sub{
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.teaching-credentials-sub:hover{
-    background-color: rgb(248, 248, 248);
-}
-
-#teaching-credentials h4{
-    color: #c6c5c5;
-}
-
-#tech-certs .card:hover{
-    background-color: rgb(248, 248, 248);
-}
-
-
-/* -----------------------------------------------WORKSHOPS SECTION */
-#workshops{
-    width: 80%;
-    margin: auto;
-}
-
-#workshops h4{
-    color: #c6c5c5;
-}
-
-#workshops div{
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-#workshops div:hover{
-    background-color: rgb(248, 248, 248);
 }
 
 /* ----------------------------------------------COURSE SECTION */
@@ -193,24 +113,206 @@ footer{
     color: #1c2743;
 }
 
+#certifications p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+
+
+/* ------------------------------------------------COURSES PAGE STYLES */
+
+.accordion-style{
+    color:#222b45; 
+    font-size: 1.5rem;
+}
+
+
+
+/* -----------------------------------------------FOOTER SECTION */
+
+footer{
+    color:#FFCD05;
+    background-color: #222B45;
+    text-align: center;
+}
+
 /* --------------------------------------------------WORK SAMPLES SECTION */
 #personal-samples img{
     filter:grayscale(80%);
 }
 
-#personal-samples img: hover{
+#personal-samples img:hover{
     filter:grayscale(0%);
 }
 
+#john-lemon-video{
+    display: block;
+    margin: auto;
+}
+
+/* ----------------------------------------------------CREDENTIALS PAGE */
+
+#teaching-credentials{
+    width: 80%;
+    margin: auto;
+}
+
+.teaching-credentials-sub{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.teaching-credentials-sub:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+#teaching-credentials h4{
+    color: #c6c5c5;
+}
+
+#tech-certs .card:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+/* -----------------------------------------------WORKSHOPS SECTION */
+#workshops{
+    width: 80%;
+    margin: auto;
+}
+
+#workshops h4{
+    color: #c6c5c5;
+}
+
+#workshops div{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#workshops div:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+
 @media only screen and (max-width: 600px) {
 
-    body{
-        max-width: 600px;
-    }
     #main{
-        padding-top: 6rem;
-        height: 80vh;
+        height: 700px;
+    }
+
+    .intro-text h2{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .intro-text p{
+        font-size: 2.3rem;
+        line-height: 2;
+    }
+
+    
+    #courses-container{
         font-size: 2rem;
     }
+
+    #courses-container h2{
+        font-size: 2.5rem;
+    }
+
+    #courses-container h3{
+        font-size: 2.5rem;
+    }
+
+    #courses-container a{
+        margin-bottom: 30px;
+    }
+
+
+    #certifications h1{
+        font-size: 2.5rem;
+    }
+
+    #certifications p{
+        font-size: 2rem;
+    }
+
+    #certifications button{
+        font-size: 2rem;
+    }
+
+    .accordion-style{
+        font-size: 2.5rem;
+    }
+
+
+    #personal-samples img{
+        filter:grayscale(0);
+    }
+
+    #student-samples h2{
+        font-size: 3rem;
+    }
+
+    .card-title{
+        font-size: 2rem;
+    }
+
+    .card-text{
+        font-size: 2rem;
+    }
+
+    #my-samples h2{
+        font-size: 3rem;
+    }
+
+    #john-lemon-video{
+        display: block;
+        margin: auto;
+    }
+
+    #teaching-credentials-header{
+        font-size: 3rem;
+    }
+
+    .teaching-credentials-sub h3{
+        font-size: 2rem;
+    }
+    .teaching-credentials-sub h4{
+        font-size: 1.8rem;
+    }
+    .teaching-credentials-sub p{
+        font-size: 1.5rem;
+    }
+
+    #tech-certs-header{
+        font-size: 3rem;
+    }
+
+    #tech-certs .card a{
+        width: 60%;
+        margin:auto;
+
+    }
+    
+    #tech-certs .card-body{
+        padding: 0 40px 40px 40px;
+    }
+
+    #workshops-header{
+        font-size: 3rem;
+    }
+
+    #workshops h3{
+        font-size: 2rem;
+    }
+    #workshops h4{
+        font-size: 1.8rem;
+    }
+    #workshops p{
+        font-size: 1.5rem;
+    }
+
 
 }
