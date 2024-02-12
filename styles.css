@@ -1,6 +1,6 @@
 body{
     background-color: #222B45;
-    min-width: 1100px;
+    min-width: 1150px;
 }
 
 /* -----------------------------------------NAVBAR STYLES */
@@ -196,33 +196,45 @@ footer{
 
 
 @media only screen and (max-width: 600px) {
+    body{
+        min-width: 100vw;
+    }
+
+    .main-container p{
+        font-size: 1.5rem;
+    }
+
+    .link{
+        font-size: 1.5rem;
+        line-height: 2;
+    }
 
     #main{
         height: 700px;
     }
 
     .intro-text h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
     }
 
     .intro-text p{
-        font-size: 2.3rem;
+        font-size: 1.3rem;
         line-height: 2;
     }
 
     
     #courses-container{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     #courses-container h2{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     #courses-container h3{
-        font-size: 2.5rem;
+        font-size: 1.4rem;
     }
 
     #courses-container a{
@@ -231,19 +243,19 @@ footer{
 
 
     #certifications h1{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     #certifications p{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     #certifications button{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .accordion-style{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
 
@@ -252,22 +264,24 @@ footer{
     }
 
     #student-samples h2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .card-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .card-text{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     #my-samples h2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #john-lemon-video{
+        width: 275px;
+        height: 155px;
         display: block;
         margin: auto;
     }
