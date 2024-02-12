@@ -2,7 +2,7 @@
 
 var i = 0;
 var speed = 50;
-var message1 = "//--TEACHER INFO--";
+var message1 = "//---TEACHER INFO---";
 var message2 = 'String teacherName = "Mr. Spence Riggs";';
 var message2_0 = 'String';
 var message2_1 = ' teacherName ';
