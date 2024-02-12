@@ -2,7 +2,7 @@
 
 var i = 0;
 var speed = 50;
-var message1 = "//----------TEACHER INFORMATION----------";
+var message1 = "//--TEACHER INFO--";
 var message2 = 'String teacherName = "Mr. Spence Riggs";';
 var message2_0 = 'String';
 var message2_1 = ' teacherName ';
@@ -50,7 +50,9 @@ var message4_6Complete = false;
 var message5Complete = false;
 
 
+
 function typeWriter() {
+    
     if (i < message1.length && message1Complete == false && message2Complete == false && message3Complete == false && message4Complete == false) {
       document.getElementById("demo1").innerHTML += message1.charAt(i);
       i++;
@@ -271,10 +273,9 @@ function typeWriter() {
         }
     }
    
-    
+
   }
 
-  // Navbar Scroll Function
 
 
 
