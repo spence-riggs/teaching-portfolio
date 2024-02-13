@@ -213,6 +213,14 @@ footer{
         height: 700px;
     }
 
+    #button-container{
+        text-align: center;
+    }
+
+    #demo5{
+        font-size: 1.5rem;
+    }
+
     .intro-text h2{
         font-size: 1.5rem;
         font-weight: 700;
@@ -287,25 +295,25 @@ footer{
     }
 
     #teaching-credentials-header{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .teaching-credentials-sub h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .teaching-credentials-sub h4{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     .teaching-credentials-sub p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #tech-certs-header{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #tech-certs .card a{
-        width: 60%;
+        width: 90%;
         margin:auto;
 
     }
@@ -315,17 +323,17 @@ footer{
     }
 
     #workshops-header{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #workshops h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #workshops h4{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     #workshops p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
 
