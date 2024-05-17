@@ -64,6 +64,7 @@ body{
     text-align: right;
 }
 
+
 /* ----------------------------------------INTRO SECTION STYLES */
 
 #introduction{
@@ -286,6 +287,7 @@ footer{
     .card-text{
         font-size: 1.2rem;
     }
+    
 
     #my-samples h2{
         font-size: 2rem;
@@ -341,4 +343,175 @@ footer{
     }
 
 
+}
+
+/* ADDED FOR ANIMS */
+.cup{
+    height: 140px;
+    width: 180px;
+    border: 6px solid #efb54a;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0px 0px 70px 70px;
+    background: url("images/coffee.png");
+    box-shadow: 0px 0px 0px 6px white;
+    background-repeat: repeat-x;
+    background-position: 0px 140px;
+    animation: fill 2.5s infinite;
+}
+@keyframes fill{
+    0%{
+        background-position: 0px 140px;
+    }
+    20%{
+        background-position: -450px 100px;
+    }
+    40%{
+        background-position: -900px 50px;
+    }
+    80%{
+        background-position: -1350px -40px;
+    }
+    100%{
+        background-position: 0px 140px;
+    }
+}
+.handle{
+    height: 70px;
+    width: 40px;
+    background-color: transparent;
+    border: 6px solid white;
+    position: relative;
+    left: 187px;
+    top: 12px;
+    border-radius: 0px 20px 60px 0px;
+}
+
+
+.container-cradle{
+    height: 150px;
+    width: 300px;
+    border-top: 22px solid #fbb226;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ball{
+   height: 150px;
+   width: 5px;
+   background-color: #fbb226; 
+   position: relative;
+   transform-origin: top;
+}
+
+.ball:after{
+    position: absolute;
+    content:"";
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    left: -30px;
+    bottom: -60px;
+}
+
+.ball:first-child{
+    animation: swing1 1.2s infinite linear;
+}
+@keyframes swing1{
+    25%{
+        transform: rotate(50deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.ball:last-child{
+    animation: swing2 1.2s infinite linear;
+}
+@keyframes swing2{
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-50deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.fidget{
+    position: absolute;
+    transform: (-50%, -50%);
+    top: 40%;
+    left: 40%;
+    height:80px;
+    width: 80px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    animation: spin 2s infinite;
+
+}
+@keyframes spin{
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.circle-1,.circle-2,.circle-3{
+    position: relative;
+    background-color: transparent;
+    border: 10px solid #f2f2f2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.circle-1{
+    bottom: 48px;
+    left: 15px;
+}
+
+.circle-2{
+    bottom: 1px;
+    left: 69px;
+}
+
+.circle-3{
+    bottom: 50px;
+    right: 35px;
+}
+
+.inner-1,.inner-2,.inner-3{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    left:0px;
+    top:0px;
+}
+
+.inner-1{
+    background-color: #4775ff;
+}
+.inner-2{
+    background-color: #ffd147;
+}
+.inner-3{
+    background-color: #ff6347;
 }
